@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <title>Document</title>
+</head>
+<style>
+   
+    
+    *{
+        margin: 0;
+        padding: 0;
+      
+    }
+  .header {
+
+    width: 100%;
+    position:fixed;
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+   padding: 10px 0px;
+	grid-gap: 10px;
+	align-items: center;
+	justify-content: space-between;
+	
+	background-color: #00bdfe;
+	border-bottom: 1px solid #ccc;
+   
+}
+
+.logo {
+	grid-column: 1;
+	font-size: 10px;
+	font-weight: bold;
+    background-color: #fff;
+   width: 119%;
+  height: 135%;
+ 
+    display: flex;
+   justify-content: center;
+    
+}
+
+.nav {
+	grid-column: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    
+}
+
+.nav ul {
+   
+	list-style: none;
+    display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+    font: 1em sans-serif;
+    
+    
+}
+
+.nav li {
+    display: grid;
+   text-align: center;
+margin-left: 25px;
+margin-right: 10px;
+}
+
+.nav a { 
+    
+	text-decoration: none;
+	color: #fff;
+}
+
+.icon {
+    
+    grid-column: 3;
+    text-decoration: none;
+   
+   width: 109%;
+   height: 117%;
+    background-color: #fff;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+   color: #00bdfe;
+   margin-left: -9%;
+    font-size: 1em;
+   
+}
+
+.img{
+    display: grid;
+    overflow: hidden;
+   margin: 0;
+   padding-right:  0;
+   
+}
+.p{
+    margin-top: -630px;
+    margin-left: 200px;
+    
+    color: #fff;
+    font: 64px roboto, sans-serif;
+   width: 75%;
+    font:  sans-serif;
+    
+   
+}
+.p span{
+    color: #00bdfe;
+}
+.p pre{
+    font: 64px roboto, sans-serif;
+    margin-left: 90px;
+    color: #fff;
+    /* font-size: 120px; */
+    width: 60%;
+       
+}
+
+.p1{
+    color: #fff;
+    padding: 30px 0px;
+    margin: 40px 75px 0px ;
+    border-top: 1px solid rgba(250, 250, 250, 0.2);
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+   
+}
+.h1{
+ 
+    margin-top: 20px;
+    margin-left: 445px;
+    font-size: 13.5px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 15px 20px;
+    display: inline-block;
+    border-radius: 10px;
+    font-weight: 500;
+    margin-right: 15px;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+
+}
+.h1:hover{
+    background-color: #fff;
+    color: #00bdfe;
+}
+.h2{
+    margin-left: 395px;
+    margin-top: -48px;
+   text-decoration: none;
+    
+   
+    
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    transition: all .3s;
+}
+.h2 i{
+    margin-right: 10px;
+}
+.images{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+   margin-top: 120px;
+}
+.h6{
+    margin-top: 130px;
+    margin-left: 110px;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #00bdfe;
+    font-weight: 400;
+}
+.h4{
+    margin-left: 105px;
+    margin-top: 10px;
+    line-height: 36px;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #212741;
+}
+span{
+    color:#00bdfe;
+}
+.button{
+    margin-top: -60px;
+    margin-left: 1060px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #00bdfe;
+    border: 1px solid #00bdfe;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 10px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+position: absolute;
+}
+.grid-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px;
+    margin-left: -40px;
+    margin-right: 50px;
+}
+.item{
+    border: 1.5px solid rgb(241, 234, 234);
+    width: 20%;
+    margin-left: 35px;
+    margin-top: 70px;
+    border-radius: 15px;
+    padding: 0px;
+    margin-right: -55px;
+
+}
+.imgi1{
+    margin-left: 17px;
+    margin-top: 30px;
+    background-color: #b2b0b0b0;
+    width: 15%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.h3{
+   margin-left: 90px;
+    font-size: 20px;
+    margin-top: -55px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    width: 50%;
+
+}
+.em{
+    margin-left: 86px;
+    width: 9%;
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 5px 8px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #00bdfe;
+    background-color: hsla(0, 4%, 69%, 0.549);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.06);
+    margin-right: 10px;
+}
+.available{
+margin-left: 140px;
+margin-top: -23px;
+position: absolute;
+color: gray;
+}
+.contests{
+    margin-left: 85px;
+    margin-top: 10px;
+    color: gray;
+}
+.image{
+    padding: 25px;
+    margin-left: -10px;
+    margin-right: 12px;
+   
+}
+.border-button  {
+    width: 60%;
+    margin-left: 17px;
+    text-align: center;
+    font-size: 20px;
+    color: #00bdfe;
+    background-color: transparent;
+    border: 1px solid #00bdfe;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 10px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+    margin-bottom: 30px;
+    margin-right: 15px;
+}
+.border-button:hover{
+    background-color: #00bdfe;
+    color: #fff;
+}
+.imgi2{
+    margin-left: 17px;
+    margin-top: 30px;
+    background-color: #b2b0b0b0;
+    width: 15%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.h32{
+   margin-left: 90px;
+    font-size: 20px;
+    margin-top: -55px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    width: 50%;
+
+}
+.em2{
+    margin-left: 86px;
+    width: 9%;
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 5px 8px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #00bdfe;
+    background-color: hsla(0, 4%, 69%, 0.549);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.06);
+    margin-right: 10px;
+}
+.available2{
+margin-left: 140px;
+margin-top: -23px;
+position: absolute;
+color: gray;
+}
+.contests2{
+    margin-left: 85px;
+    margin-top: 10px;
+    color: gray;
+}
+.image2{
+    padding: 25px;
+    margin-left: -10px;
+    margin-right: 12px;
+   
+}
+.border-button2  {
+    width: 60%;
+    margin-left: 17px;
+    text-align: center;
+    font-size: 18px;
+    color: #00bdfe;
+    background-color: transparent;
+    border: 1px solid #00bdfe;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 10px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+    margin-bottom: 30px;
+    margin-right: 15px;
+}
+.border-button2:hover{
+    background-color: #00bdfe;
+    color: #fff;
+}
+.imgi3{
+    margin-left: 17px;
+    margin-top: 30px;
+    background-color: #b2b0b0b0;
+    width: 15%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.h33{
+   margin-left: 90px;
+    font-size: 20px;
+    margin-top: -55px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    width: 50%;
+
+}
+.em3{
+    margin-left: 86px;
+    width: 9%;
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 5px 8px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #00bdfe;
+    background-color: hsla(0, 4%, 69%, 0.549);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.06);
+    margin-right: 10px;
+}
+.available3{
+margin-left: 140px;
+margin-top: -23px;
+position: absolute;
+color: gray;
+}
+.contests3{
+    margin-left: 85px;
+    margin-top: 10px;
+    color: gray;
+}
+.image3{
+    padding: 25px;
+    margin-left: -10px;
+    margin-right: 12px;
+   
+}
+.border-button3  {
+    width: 60%;
+    margin-left: 17px;
+    text-align: center;
+    font-size: 20px;
+    color: #00bdfe;
+    background-color: transparent;
+    border: 1px solid #00bdfe;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 10px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+    margin-bottom: 30px;
+    margin-right: 15px;
+}
+.border-button3:hover{
+    background-color: #00bdfe;
+    color: #fff;
+}
+.imgi4{
+    margin-left: 17px;
+    margin-top: 30px;
+    background-color: #b2b0b0b0;
+    width: 15%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.h34{
+   margin-left: 90px;
+    font-size: 20px;
+    margin-top: -55px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    width: 50%;
+
+}
+.em4{
+    margin-left: 86px;
+    width: 9%;
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 5px 8px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #00bdfe;
+    background-color: hsla(0, 4%, 69%, 0.549);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.06);
+    margin-right: 10px;
+}
+.available4{
+margin-left: 140px;
+margin-top: -23px;
+position: absolute;
+color: gray;
+}
+.contests4{
+    margin-left: 85px;
+    margin-top: 10px;
+    color: gray;
+}
+.image4{
+    padding: 25px;
+    margin-left: -10px;
+    margin-right: 12px;
+   
+}
+.border-button4  {
+    width: 60%;
+    margin-left: 17px;
+    text-align: center;
+    font-size: 20px;
+    color: #00bdfe;
+    background-color: transparent;
+    border: 1px solid #00bdfe;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 10px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+    margin-bottom: 30px;
+    margin-right: 15px;
+}
+.border-button4:hover{
+    background-color: #00bdfe;
+    color: #fff;
+}
+
+.bgimg{
+   overflow: hidden;
+    margin-top: 150px;
+}
+.pp1{
+    
+    margin-top: -750px;
+    display: flex;
+    justify-content: center;
+    
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #00bdfe;
+    font-weight: 400;
+
+}
+.pp2{
+    
+    margin-left: 400px;
+    margin-top: 10px;
+    line-height: 36px;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #212741;
+}
+
+.im1{
+    margin-top: 100px;
+   margin-left: 10px;
+}
+.im2{
+    margin-top: 100px;
+   margin-left: 60px;
+}
+.im3{
+    margin-top: 100px;
+   margin-left: 60px;
+}
+.pp3{
+    margin-left: 2%;
+    margin-top: -5px;
+    font-size: 17px;
+    font-weight: 1000;
+    background-color: #fff;
+    padding-top: 30px;
+    height: 20%;
+    width: 98%;
+   
+    border-bottom-left-radius: 20px; 
+    border-bottom-right-radius: 20px;
+}
+.pp4{
+    margin-top: -40px;
+    margin-left: 30px;
+    font-size: 17px;
+    font-weight: 800;
+    color: gray;
+}
+.pp5{
+    margin-left: 200px;
+    margin-top: -57px;
+    font-size: 17px;
+    font-weight: 1000;
+}
+.pp6{
+    margin-left: 200px;
+    margin-top: 18px;
+    font-size: 17px;
+    font-weight: 800;
+    color: gray;
+}
+.pp7{
+    margin-left: 13%;
+    margin-top: -5px;
+    font-size: 17px;
+    font-weight: 1000;
+    background-color: #fff;
+    padding-top: 30px;
+    height: 20%;
+    width: 87%;
+    border-bottom-left-radius: 
+    20px; border-bottom-right-radius: 20px;
+}
+.pp8{
+    margin-top: -40px;
+    margin-left: 75px;
+    font-size: 17px;
+    font-weight: 800;
+    color: gray;
+}
+.pp9{
+    margin-left: 240px;
+    margin-top: -57px;
+    font-size: 17px;
+    font-weight: 1000;
+}
+.pp10{
+    margin-left: 240px;
+    margin-top: 18px;
+    font-size: 17px;
+    font-weight: 800;
+    color: gray;
+}
+.pp11{
+    margin-left: 13%;
+    margin-top: -5px;
+    font-size: 17px;
+    font-weight: 1000;
+    background-color: #fff;
+    padding-top: 30px;
+    height: 20%;
+    width: 87%;
+    border-bottom-left-radius: 20px; 
+    border-bottom-right-radius: 20px;
+}
+.pp12{
+    margin-top: -40px;
+    margin-left: 75px;
+    font-size: 17px;
+    font-weight: 800;
+    color: gray;
+}
+.pp13{
+    margin-left: 240px;
+    margin-top: -57px;
+    font-size: 17px;
+    font-weight: 1000;
+}
+.pp14{
+    margin-left: 240px;
+    margin-top: 18px;
+    font-size: 17px;
+    font-weight: 800;
+    color: gray;
+}
+.button2{
+    margin-left: 580px;
+    margin-top: 100px;
+    font-size: 15px;
+    color: #00bdfe;
+    background-color: transparent;
+    border: 1px solid #00bdfe;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 10px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+}
+.button2:hover{
+    background-color: #00bdfe;
+    color: #fff;
+}
+.pp15{
+    margin-top: 300px;
+    margin-left: 640px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #00bdfe;
+    font-weight: 400;
+}
+.pp16{
+    margin-left:400px;
+    margin-top: 10px;
+    line-height: 36px;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #212741;
+}
+.itm{
+    margin-left: 80px;
+    margin-top: 100px;
+    text-align: center;
+    padding: 30px;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    transition: all .5s;
+}
+
+.pp17{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #d4d4d4;
+    transition: all .5s;
+}
+.pp17:hover{
+    color: #00bdfe;
+}
+.pp18{
+    
+    font-size: 15px;
+    color: #00bdfe;
+    margin-bottom: 10px;
+
+}
+.pp18{
+    
+    font-size: 15px;
+    color: #00bdfe;
+    margin-bottom: 10px;
+
+}
+.pp19{
+    
+    font-size: 15px;
+    color: #00bdfe;
+    margin-bottom: 10px;
+
+}
+.pp20{
+    
+    font-size: 15px;
+    color: #00bdfe;
+    margin-bottom: 10px;
+
+}
+.pp21{
+    
+    
+    color: #afafaf;
+    text-decoration: line-through;
+
+}
+.pp22{
+    
+    
+    color: #afafaf;
+    text-decoration: line-through;
+
+}
+.pp23{
+    
+    font-size: 30px;
+    color: #00bdfe;
+    font-weight: 700;
+    display: inline-block;
+    margin-top: 30px;
+
+}
+.pp24{
+  margin-top: 30px;
+    font-size: 15px;
+    color: #00bdfe;
+    background-color: transparent;
+    border: 1px solid #00bdfe;
+    padding: 10px 30px;
+    
+    border-radius: 10px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+}
+.pp24:hover{
+background-color: #00bdfe;
+color: #fff;
+}
+.pp25{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #d4d4d4;
+    transition: all .5s;
+}
+.pp25:hover{
+    color: #00bdfe;
+}
+.pp26{
+    
+    font-size: 15px;
+    color: #00bdfe;
+    margin-bottom: 10px;
+
+}
+.pp27{
+    
+    font-size: 15px;
+    color: #00bdfe;
+    margin-bottom: 10px;
+
+}
+.pp28{
+    
+    font-size: 15px;
+    color: #00bdfe;
+    margin-bottom: 10px;
+
+}
+.pp29{
+    
+    font-size: 15px;
+    color: #00bdfe;
+    margin-bottom: 10px;
+
+}
+.pp30{
+    
+    
+    color: #afafaf;
+    text-decoration: line-through;
+
+}
+.pp{
+    
+    
+    color: #afafaf;
+    text-decoration: line-through;
+
+}
+.pp31{
+    
+    font-size: 30px;
+    color: #00bdfe;
+    font-weight: 700;
+    display: inline-block;
+    margin-top: 30px;
+
+}
+.pp32{
+  margin-top: 30px;
+    font-size: 15px;
+    color: #00bdfe;
+    background-color: transparent;
+    border: 1px solid #00bdfe;
+    padding: 10px 30px;
+    
+    border-radius: 10px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+}
+.pp32:hover{
+background-color: #00bdfe;
+color: #fff;
+}
+.pp33{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #d4d4d4;
+    transition: all .5s;
+}
+.pp33:hover{
+    color: #00bdfe;
+}
+.pp34{
+    
+    font-size: 15px;
+    color: #00bdfe;
+    margin-bottom: 10px;
+
+}
+.pp35{
+    
+    font-size: 15px;
+    color: #00bdfe;
+    margin-bottom: 10px;
+
+}
+.pp36{
+    
+    font-size: 15px;
+    color: #00bdfe;
+    margin-bottom: 10px;
+
+}
+.pp37{
+    
+    font-size: 15px;
+    color: #00bdfe;
+    margin-bottom: 10px;
+
+}
+.pp38{
+    
+    
+    font-size: 15px;
+    color: #00bdfe;
+    margin-bottom: 10px;
+
+
+}
+
+.pp39{
+    
+    font-size: 30px;
+    color: #00bdfe;
+    font-weight: 700;
+    display: inline-block;
+    margin-top: 30px;
+
+}
+.pp40{
+  margin-top: 30px;
+    font-size: 15px;
+    color: #00bdfe;
+    background-color: transparent;
+    border: 1px solid #00bdfe;
+    padding: 10px 30px;
+    
+    border-radius: 10px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+}
+.pp40:hover{
+background-color: #00bdfe;
+color: #fff;
+}
+.footer{
+    margin-top: 100px;
+    font-weight: 500;
+    background-color: #00bdfe;
+    color: #fff;
+    width: 100%;
+    height: 80px;
+}
+.footer p{
+   
+    padding-top: 35px;
+    margin-left: 320px;
+}
+  </style>
+<body>
+  <header class="header">
+    <div class="logo"><img height="" src="../assets/images/logo.png" alt=""></div>
+    <nav class="nav">
+        <ul>
+            <li><a href="#">HOME</a></li>
+          <li><a href="#">PHOTOS & VIDEOS<i style="margin-left: 10px;" class="fa fa-angle-down"></i></a></li>
+              <li><a href="#">CATEGORIES</a></li>
+              <li><a href="#">USERS</a></li>
+             
+          </ul>
+          
+    </nav>
+    <div class="icon">
+        <a class="icon" href=""><i style="border: 2px solid #00bdfe; padding: 10px 20px; border-radius: 10px;" class="fa solid  fa-user"> Sign In/ Up</i></a> 
+      
+        </icon>
+       
+          
+  </header>
+  <div class="img">
+    <img width="1440px" height="943px" src="../assets/images/banner-bg.jpg" alt="">
+    
+  </div>
+  <div class="p">
+  <p>Enter A World Of  <span>Photos</span> & Amazing  <pre>                  <span>Awards</pre></span></p>
+ 
+</div>
+  <div class="p1">
+  <p >SnapX Photography is a professional website template with 5 different HTML pages for maximum customizations. It
+    is free for commercial  <br>usage. This Bootstrap v5.1.3 CSS layout is provided by TemplateMo Free CSS Templates.<p>
+    </div>
+    <div class="h1">
+        <h1 >Explore SnapX Contest</h1>
+    </div>
+    <div class="h2">
+        <h2><a class="h2" href=""><i class="fa fa-play"></i>Watch Our Video Now</h2></a>
+    </div>
+    <div class="images">
+        <img style="border-radius: 20px;" src="../assets/images/s-1.jpg" alt="">
+        <img style="border-radius: 20px;" src="../assets/images/ss-2.jpg" alt="">
+        <img style="border-radius: 20px;" src="../assets/images/s-3.jpg" alt="">
+    </div>
+    <div class="h6">
+        <h6>OUR CATEGORIES</h6>
+    </div>
+    <div class="h4">
+        <h4>Check Out<span> Popular </span> Contest<span> Categories</span></h4>
+    </div>
+    <div class="button">
+        <p>Discover All Categories</p>
+    </div>
+    <div class="grid-container">
+    <div class="item item1">
+        <div class="imgi1"><img src="../assets/images/item-1" alt=""></div>
+<div class="h3"> <h3>Nature Pic Contest</h3></div>
+<div class="em">
+    <p>126</p>
+    
+</div>
+<div class="available"><p>Available</p></div>
+    <div class="contests"><p>Contests</p></div>
+    <div class="image"><img style=" border-radius: 30px ; width: 110%;" src="../assets/images/item-1-1" alt=""></div>
+    <div class="border-button "><p>Browse Nature Pic Contest</p></div>
+           </div>
+    <div class="item item2">
+       
+            <div class="imgi2"><img src="../assets/images/item-2" alt=""></div>
+    <div class="h32"> <h3>Random Pic Contest</h3></div>
+    <div class="em2">
+        <p>116</p>
+        
+    </div>
+    <div class="available2"><p>Available</p></div>
+        <div class="contests2"><p>Contests</p></div>
+        <div class="image2"><img style=" border-radius: 30px ; width: 110%;" src="../assets/images/item-2-2" alt=""></div>
+        <div class="border-button2 "><p>Browse Random Pic Contest</p></div>
+    </div>
+    <div class="item item3">
+       
+            <div class="imgi3"><img src="../assets/images/item-3" alt=""></div>
+    <div class="h33"> <h3>Portrait Pic Contest</h3></div>
+    <div class="em3">
+        <p>136</p>
+        
+    </div>
+    <div class="available3"><p>Available</p></div>
+        <div class="contests3"><p>Contests</p></div>
+        <div class="image3"><img style=" border-radius: 30px; width: 110%; " src="../assets/images/item-3-3" alt=""></div>
+        <div class="border-button3 "><p>Browse Portrait Pic Contest</p></div>
+    </div>
+    <div class="item item4">
+       
+            <div class="imgi4"><img src="../assets/images/item-4" alt=""></div>
+    <div class="h34"> <h3>Space Pic Contest</h3></div>
+    <div class="em4">
+        <p>146</p>
+        
+    </div>
+    <div class="available4"><p>Available</p></div>
+        <div class="contests4"><p>Contests</p></div>
+        <div class="image4"><img style=" border-radius: 30px ; width: 110%;" src="../assets/images/item-4-4" alt=""></div>
+        <div class="border-button4 "><p>Browse Space Pic Contest</p></div>
+    </div>
+    </div>
+<div class="grid-item">
+    <div class="bgimg">
+        <img width="1440px" height="943px" src="../assets/images/closed-bg.jpg" alt="">
+    </div>
+    <div class="pp1"><P>CLOSED PHOTOGRAPHY CONTESTS</P></div>
+    <div class="pp2"><P><span>Previous Contests </span> With Handpicked <span> Winners</span></P></div>
+    <div class="grid-container">
+        <div class="items items1">
+            <div class="im1"><img style="border-top-left-radius: 20px; border-top-right-radius: 20px;" src="../assets/images/closed-01.jpg" alt=""></div>
+            <div class="pp3"  ><p style="margin-left: 20px;">88 participants</p></div>
+            <div class="pp4" ><p>Number Of Artist</p></div>
+            <div class="pp5" ><p>320 Pictures</p></div>
+            <div class="pp6" ><p>Submited Pics</p></div>
+        </div>
+       
+        <div class="items items2">
+            <div class="im2"><img style="border-top-left-radius: 20px; border-top-right-radius: 20px;" src="../assets/images/closed-02.jpg" alt=""></div>
+            <div class="pp7"  ><p style="margin-left: 20px;">96 participants</p></div>
+            <div class="pp8" ><p>Number Of Artist</p></div>
+            <div class="pp9" ><p>41 Pictures</p></div>
+            <div class="pp10" ><p>Submited Pics</p></div>
+        </div>
+        <div class="items items3">
+            <div class="im3"><img style="border-top-left-radius: 20px; border-top-right-radius: 20px;" src="../assets/images/closed-03.jpg" alt=""></div>
+            <div class="pp11"  ><p style="margin-left: 20px;">74 participants</p></div>
+            <div class="pp12" ><p>Number Of Artist</p></div>
+            <div class="pp13" ><p>284 Pictures</p></div>
+            <div class="pp14" ><p>Submited Pics</p></div>
+        </div>
+
+    </div>
+    <div class="button2"><p>Browse Open Contests</p></div>
+</div>
+</div>
+<div class="pp15"><p>OUR PRICING</p></div>
+<div class="pp16"><P>Photography <span>Contest Plans </span> And Price <span> Awards</span></P></div>
+<div class="grid-container">
+    <div class="itm itm1">
+        <div class="i1">
+            <img src="../assets/images/pricing-01.jpg" alt="">
+            <div class="pp17"><p>Baisc Plan</p></div>
+            <div class="pp18"><p>Lorem Ipsum Dolores Sonte</p></div>
+            <div class="pp19"><p>Songe Lorem Ipsum Dol</p></div>
+            <div class="pp20"><p>Matrios Venga Heptuss</p></div>
+            <div class="pp21"><p>  Denim Sriracha Kogi</p></div>
+            <div class="pp22"><p>Digital Photography Awards</p></div>
+            <div class="pp23"><p>$25 USD</p></div>
+            <div class="pp24"><p>Choose This Plan</p></div>
+
+
+          
+
+
+        </div>
+    </div>
+    <div class="itm itm2">
+        <div class="i2">
+            <img src="../assets/images/pricing-02.jpg" alt="">
+            <div class="pp25"><p>Baisc Plan</p></div>
+            <div class="pp26"><p>Lorem Ipsum Dolores Sonte</p></div>
+            <div class="pp27"><p>Songe Lorem Ipsum Dol</p></div>
+            <div class="pp28"><p>Matrios Venga Heptuss</p></div>
+            <div class="pp29"><p>  Denim Sriracha Kogi</p></div>
+            <div class="pp30"><p>Digital Photography Awards</p></div>
+            <div class="pp31"><p>$45 USD</p></div>
+            <div class="pp32"><p>Choose This Plan</p></div>
+            
+
+          
+
+
+        </div>
+    </div>
+    <div class="itm itm3">
+        <div class="i3">
+            <img src="../assets/images/pricing-02.jpg" alt="">
+            <div class="pp33"><p>Baisc Plan</p></div>
+            <div class="pp34"><p>Lorem Ipsum Dolores Sonte</p></div>
+            <div class="pp35"><p>Songe Lorem Ipsum Dol</p></div>
+            <div class="pp36"><p>Matrios Venga Heptuss</p></div>
+            <div class="pp37"><p>  Denim Sriracha Kogi</p></div>
+            <div class="pp38"><p>Digital Photography Awards</p></div>
+            <div class="pp39"><p>$85 USD</p></div>
+            <div class="pp40"><p>Choose This Plan</p></div>
+            
+
+          
+
+
+        </div>
+    </div>
+       
+    
+</div>
+<div class="footer"><p>Copyright © 2048 SnapX Photo Contest Co., Ltd. All rights reserved. Design: TemplateMo Distribution: ThemeWagon</p></div>
+
+</body>
+</html>
